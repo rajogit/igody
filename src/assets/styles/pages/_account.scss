@@ -1,0 +1,262 @@
+.wrapper-account {
+	.content-form {
+		h2.no-trait {
+			margin-bottom: 25px;
+			font-weight: 700;
+			font-size: 18px;
+			&:after {
+				display: none;
+			}
+		}
+		.list-history {
+			padding-left: 0;
+			margin-left: 0;
+			li {
+				clear: both;
+				overflow: hidden;
+				border-top: 1px solid #e6e6e6;
+				height: 58px;
+				line-height: 58px;
+				.col1, .col2, .col3 {
+					float: left;
+					width: 33%;
+					font-weight: 700;
+					font-size: 16px;
+				}
+				.col2 {
+					color: #ababab;
+					text-align: center;
+				}
+				.col3 {
+					width: 34%;
+					text-align: right;
+					padding-left: 15px;
+					a {
+						color: #ababab;
+						font-size: 14px;
+						&:hover {
+							color: $orange;
+						}
+						.icon-upload-orange {
+							margin-left: 10px;
+							text-align: left;
+						}					
+					}
+				}
+				&.wrapper-archives {
+					a {
+						font-weight: 500;
+						font-size: 13px;
+					}
+				}
+			}
+		}
+		.list-subscription {
+			padding-left: 0;
+			margin-left: 0;
+			li {
+				margin-bottom: 15px;
+				.block-list {
+					border: 1px solid $yellow;
+					padding: 8px 10px;
+					p {
+						margin-bottom: 0;
+					}
+					.col1 {
+						border-right: 1px solid #e6e6e6;
+						width: 36%;
+						float: left;
+						height: 100%;
+						.subscription-type {
+							font-family: "robotocondensed";
+							color: #8d8d8d;
+							font-size: 16px;
+							font-weight: 400;
+							margin-bottom: 7px;
+							span {
+								color: #222222;
+								font-size: 23px;
+								font-weight: 700;
+							}
+						}
+						.subscription-company {
+							color: $orange;
+							font-weight: 500;
+							font-size: 14px;
+						}
+					}
+					.col2 {
+						width: 47%;
+						float: left;
+						padding-left: 22px;
+						.subscription-state {
+							font-weight: 500;
+							font-size: 14px;
+							&.green {
+								color: #1D8427;
+							}
+							&.orange {
+								color: #e9750e;
+							}
+							&.red {
+								color: #f50d0d;
+							}
+						}
+						.subscription-mode {
+							font-size: 13px;
+							font-weight: 500;
+							font-style: italic;
+							color: #818181;
+						}
+						.subscription-begin{
+							font-weight: 500;
+							color: #222222;
+							font-size: 14px;
+						}
+						.subscription-end {					
+							font-weight: 500;
+							color: #222222;
+							font-size: 15px;
+						}
+					}
+					.col3 {
+						width: 17%;
+						float: left;
+						text-align: right;
+						.block-renew {
+							min-height: 24px;
+							margin-bottom: 20px;
+							.btn-orange {
+								font-size: 12px;
+								padding: 4px 5px;
+								.icon-arrow-right {
+									margin-left: 0;
+									&:before {
+										margin-right: 0;
+										margin-left: 7px;
+									}
+								}
+							}
+						}
+						.btn-primary {
+							height: 32px;
+							width: 32px;
+							line-height: 32px;
+							padding: 0;
+							text-align: center;
+						}
+					}
+				}
+				.block-list-content {
+					display: none;
+					margin-top: 30px;
+					h2 {
+						font-size: 20px;
+					}
+					.notice {
+						font-size: 16px;
+						margin-bottom: 30px;
+						a {
+							color: $orange;
+							text-decoration: underline;
+							&:hover {
+								color: #222222;
+							}
+						}
+					}
+					.user {
+						margin-bottom: 42px;
+						.title-help {
+							margin-bottom: 12px;
+						}
+					}
+					.user-add {
+						a {
+							font-size: 14px;
+							font-weight: 500;
+						}
+					}
+					.form-row {
+						input[type="text"] {
+							width: 79px;
+							height: 75px;
+							line-height: 75px;
+							text-align: center;
+							font-family: "robotocondensed";
+							font-size: 49px;
+							font-weight: 700;
+							color: $orange;
+						}
+					}
+					.user-listing {
+						margin-bottom: 30px;
+						.title-help {
+							margin-bottom: 8px;
+							span {
+								font-weight: 500;
+								color: #636363;
+								font-size: 14px;
+								display: block;
+								.red {
+									color: $orange;
+									display: inline;
+								}
+							}
+							.btn {
+								margin-top: 10px;
+								font-size: 14px;
+								font-weight: 500;
+								&.disabled {
+									background-color: #e1e1e1;
+									border-color: #e1e1e1;
+									color: #7f7f7f;
+								}
+								.icon-arrow-right-white {
+									margin-bottom: 1px;
+								}
+							}
+						}
+						.wrapper-user-listing {
+							margin-left: 0;
+							padding-left: 0;
+							li {
+								border-bottom: 1px solid #e6e6e6;
+								clear: both;
+								overflow: hidden;
+								height: 53px;
+								line-height: 53px;
+								vertical-align: middle;
+								&:first-child {
+									border-top: 1px solid #e6e6e6;
+								}
+								.col {
+									width: 33%;
+									float: left;
+									font-weight: 500;
+									font-size: 14px;
+									&:first-child {
+										text-align: left;
+										&+ .col {
+											text-align: center;
+											color: #7f7f7f;
+											&+ .col {
+												width: 34%;
+												text-align: right;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.offers {
+						margin-top: 0;
+						.btn-abo {
+							margin-top: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

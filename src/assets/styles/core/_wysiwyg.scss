@@ -1,0 +1,493 @@
+.content-wysi {
+	padding-bottom: 35px;
+	padding-top: 15px;
+	@media screen and (min-width: 768px) {
+		padding-top: 23px;
+		padding-bottom: 65px;
+		
+	}
+	h2 {
+		color: $orange;
+		font-size: 18px;
+		margin-top: 0;
+		margin-bottom: 22px;
+		font-weight: 500;
+		&:after {
+			content:"";
+			height: 1px;
+			width: 100%;
+			display: block;
+			margin-top: 13px;
+			background-color: $orange;
+		}
+		@media screen and (min-width: 768px) {
+			font-weight: 400;
+			font-size: 32px;
+			margin-bottom: 42px;
+			margin-top: 25px;
+		}
+	}
+	h3 {
+		color: #222222;
+		font-size: 16px;
+		font-weight: 900;
+		margin-top: 0;
+		margin-bottom: 13px;
+		@media screen and (min-width: 768px) {
+			font-weight: 700;
+			font-size: 22px;
+		}
+	}
+	.alignleft {
+		display: inline;
+		float: left;
+		margin-bottom: 10px;
+		@media screen and (min-width: 768px) {
+			margin-right: 40px;
+		}
+	}
+	.alignright {
+		display: inline;
+		float: right;
+		margin-bottom: 10px;
+		@media screen and (min-width: 768px) {
+			margin-left: 40px;
+		}
+	}
+	.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.wrapper-col {
+		clear: both;
+		overflow: hidden;
+		.col-first {
+			@media screen and (min-width: 769px) {
+				padding-right: 10px;
+			}
+		}
+		.col-last {
+			@media screen and (min-width: 769px) {
+				padding-left: 10px;
+			}
+		}
+		&.three-col {
+			.col-md-4 {
+				padding: 0;
+				height: 100%;
+				&:first-child {
+					@media screen and (min-width: 769px) {
+						padding-right: 11px;
+					}
+					&+ div {
+						@media screen and (min-width: 769px) {
+							padding-right: 11px;
+							padding-left: 11px;
+						}
+						&+ div {
+							@media screen and (min-width: 769px) {
+								padding-left: 11px;
+							}
+						}
+					}
+				}
+				&> div {
+					background-color: #F4F4F4;
+					padding: 10px 15px;
+					@media screen and (min-width: 769px) {
+						padding: 25px 15px;
+						min-height: 332px;
+					}
+				}
+			}
+		}
+		&.block-tarif {
+			h3 {
+				margin-bottom: 22px;
+			}
+			p {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 120%;
+				margin-bottom: 21px;
+				span {
+					display: block;
+					color: $orange;
+					line-height: 100%;
+					font-size: 18px;
+					margin-bottom: 2px;
+				}
+			}
+		}
+	}
+	.table {
+		&>tbody {
+			&> tr {
+				&> td {
+					font-weight: 500;
+					font-size: 14px;
+					padding-top: 12px;
+					padding-bottom: 12px;
+					&:first-child {
+						padding-left: 30px;
+						&+ td {
+							text-align: center;
+							&+ td {
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	ul {
+		padding-left: 0;
+		margin-left: 0;
+		li {
+			list-style-type: disc;
+			list-style-position: inside;
+		}
+		&.puce-fleche {
+			li {
+				list-style-type: none;
+				margin-bottom: 4px;
+				&:before {
+					content: "";
+					display: inline-block;
+					@include sprite($arrow-right-orange);
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	a {
+		color: $orange;
+		&.link-arrow {
+			.icon-arrow-right {
+				&:before {
+					@include sprite($arrow-right-orange);
+				}
+			}
+		}
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+// Wysiwyg Article
+.article-wysi {
+	h2 {
+		color: $dark;
+		font-size: 20px;
+		line-height: 100%;
+		margin-top: 0;
+		margin-bottom: 22px;
+		font-weight: 700;
+		@media screen and (min-width: 768px) {
+			font-weight: 700;
+			font-size: 26px;
+			margin-bottom: 19px;
+		}
+	}
+	h3 {
+		color: $dark;
+		font-size: 16px;
+		font-weight: 900;
+		line-height: 100%;
+		margin-top: 0;
+		margin-bottom: 13px;
+		@media screen and (min-width: 768px) {
+			font-weight: 700;
+			font-size: 22px;
+			margin-bottom: 16px;
+		}
+	}
+	h4 {
+		color: $dark;
+		font-size: 16px;
+		line-height: 120%;
+		margin-top: 0;
+		margin-bottom: 22px;
+		font-weight: 700;
+		@media screen and (min-width: 992px) {
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 100%;
+			margin-bottom: 12px;
+		}
+	}
+	p {
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 15px;
+		line-height: 22px;
+		margin-bottom: 38px;
+		@media screen and (min-width: 992px) {
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	.blockquote {
+		display: block;
+		font-family: "robotocondensed";
+		padding: 14px 15px 15px 0;
+		font-weight: 700;
+		line-height: 32px;
+		border-top: 1px solid #e6e6e6;
+		border-bottom: 1px solid #e6e6e6;
+		margin-right: 35px;
+		margin-bottom: 8px;
+		font-size: 20px;
+		@media screen and (min-width: 992px) {
+			width: 50%;
+			font-size: 24px;
+			float: left;
+		}
+	}
+	.alignleft {
+		display: block;
+		float: left;
+		margin-bottom: 10px;
+		@media screen and (min-width: 768px) {
+			margin-right: 40px;
+		}
+	}
+	.alignright {
+		display: block;
+		float: right;
+		margin-bottom: 10px;
+		@media screen and (min-width: 768px) {
+			margin-left: 40px;
+		}
+	}
+	.aligncenter {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	.block-more {
+		border-top: 1px solid #c8c8c8;
+		border-bottom: 1px solid #c8c8c8;
+		padding: 15px 0 11px;
+		margin-bottom: 15px;
+		div {
+			text-transform: uppercase;
+			color: $orange;
+			font-weight: 900;
+			font-size: 14px;
+			margin-bottom: 5px;
+			&:before {
+				content:"";
+				display: block;
+				@include sprite($glass);
+				float: left;
+				margin-top: -1px;
+				margin-right: 10px;
+			}
+		}
+		a {
+			border: 0 none;
+			font-weight: 700;
+			font-size: 14px;
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
+	.block-encadre.article-pdf {
+		.title {
+			font-weight: 700;
+			margin-bottom: 25px;
+		}
+		.article-down {
+			text-align: right;
+			a {
+				color: #000;
+				font-size: 18px;
+				font-weight: 700;
+				border-bottom: none;
+				i {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.block-encadre {
+		border: 1px solid $orange;
+		padding: 17px 17px 8px;
+		margin-bottom: 42px;
+		clear: both;
+		overflow: hidden;
+		.title {
+			font-weight: 700;
+			font-size: 22px;
+			margin-bottom: 15px;
+		}
+		.wrap-img {
+			max-width: 220px;
+			float: left;
+			margin-right: 20px;
+		}
+		.wrap-desc {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			font-size: 16px;
+			color: #6e6e6e;
+			p {
+				font-weight: 700;
+			}
+		}
+
+	}
+	.wrapper-col {
+		clear: both;
+		overflow: hidden;
+		.col-first {
+			@media screen and (min-width: 769px) {
+				padding-right: 10px;
+			}
+		}
+		.col-last {
+			@media screen and (min-width: 769px) {
+				padding-left: 10px;
+			}
+		}
+		&.three-col {
+			.col-md-4 {
+				padding: 0;
+				height: 100%;
+				&:first-child {
+					@media screen and (min-width: 769px) {
+						padding-right: 11px;
+					}
+					&+ div {
+						@media screen and (min-width: 769px) {
+							padding-right: 11px;
+							padding-left: 11px;
+						}
+						&+ div {
+							@media screen and (min-width: 769px) {
+								padding-left: 11px;
+							}
+						}
+					}
+				}
+				&> div {
+					background-color: #F4F4F4;
+					padding: 10px 15px;
+					@media screen and (min-width: 769px) {
+						padding: 25px 15px;
+						min-height: 332px;
+					}
+				}
+			}
+		}
+	}
+	.table {
+		&>tbody {
+			&> tr {
+				&> td {
+					font-weight: 500;
+					font-size: 14px;
+					padding-top: 12px;
+					padding-bottom: 12px;
+					&:first-child {
+						padding-left: 30px;
+						&+ td {
+							text-align: center;
+							&+ td {
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	ul {
+		padding-left: 0;
+		margin-left: 8.33%;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 15px;
+		margin-bottom: 41px;
+		@media screen and (min-width: 769px) {
+			font-size: 18px;
+		}
+		li {
+			list-style-type: none;
+			margin-bottom: 4px;
+			line-height: 148%;
+			&:before {
+				content: "";
+				display: inline-block;
+				@include sprite($arrow-right-orange);
+				margin-right: 10px;
+			}
+		}
+	}
+	ol {
+		padding-left: 0;
+		margin-left: 8.33%;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+		font-size: 15px;
+		margin-bottom: 41px;
+		@media screen and (min-width: 769px) {
+			font-size: 18px;
+		}
+		li {
+			margin-bottom: 4px;
+			line-height: 148%;
+			list-style-position: inside;
+		}
+	}
+	figcaption, .figcaption {
+		font-style: italic;
+		font-weight: 500;
+		font-size: 13px;
+		color: $dark;
+		margin-top: 7px;
+		margin-bottom: 39px;
+		span {
+			color: #909090;
+		}
+	}
+	a {
+		color: $dark;
+		border-bottom: 1px solid $orange;
+		&.link-arrow {
+			.icon-arrow-right {
+				&:before {
+					@include sprite($arrow-right-orange);
+				}
+			}
+		}
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+.scientific {
+	.article-wysi {
+		.block-encadre {
+			margin-bottom: 0;
+		}
+	}
+}
+.login-article {
+	.article-wysi {
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

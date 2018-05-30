@@ -1,0 +1,135 @@
+.bloc-offre-prelancement {
+	padding: 19px 18px 24px;
+	border: 1px solid $orange;
+	background-color: #F4F4F4;
+	margin-bottom: 22px;
+	.col-1 {
+		font-family: "robotocondensed";
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 90%;
+		margin-bottom: 10px;
+		@media screen and (min-width: 991px) {
+			width: 25%;
+			float: left;
+			margin-bottom: 0;
+		}
+	}
+	.col-2 {
+		
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 130%;
+		margin-bottom: 10px;
+		@media screen and (min-width: 991px) {
+			padding-top: 5px;
+			width: 40%;
+			float: left;
+			margin-bottom: 0;
+		}
+	}
+	.col-3 {
+		@media screen and (min-width: 991px) {
+			width: 35%;
+			float: left;
+		}
+		.block-price {
+			font-family: 'robotocondensed';
+			font-weight: 700;
+			color: $orange;
+			font-size: 38px;
+			clear: both;
+			overflow: hidden;
+			.price-reduct {
+				@media screen and (min-width: 991px) {
+					width: 50%;
+					float: left;
+					padding-top: 5px;
+				}
+				& > span {
+					&:first-child {
+						display: block;
+						float: left;
+						line-height: 100%;
+						padding-right: 4px;
+						position: relative;
+						&:before {
+							content: "";
+							width: 125%;
+							height: 2px;
+							background-color: $orange;
+							display: block;
+							position: absolute;
+							top: 50%;
+							margin-top: -1px;
+							margin-left: -6px;
+						}
+					}
+				}
+				.wrapper-devise {
+					span {
+						display: block;
+						line-height: 130%;
+						margin-left: 4px;
+						&:first-child {
+							font-size: 11px;
+							margin-top: 4px;
+							& + span {
+								font-size: 10px;
+								color: #222222;
+							}
+						}
+					}
+				}
+			}
+			.price {
+				font-size: 56px;
+				@media screen and (min-width: 991px) {
+					width: 50%;
+					float: left;
+					padding-top: 5px;
+				}
+				& > span {
+					&:first-child {
+						display: block;
+						line-height: 88%;
+						padding-right: 4px;
+						
+							float: left;
+						
+					}
+				}
+				.wrapper-devise {
+					span {
+						display: block;
+						line-height: 110%;
+						margin-left: 4px;
+						&:first-child {
+							font-size: 16px;
+							margin-top: 2px;
+							& + span {
+								font-size: 14px;
+								color: #222222;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.btn-register {
+	display: none;
+	text-align: left;
+}
+.connexion-box {
+	display: none;
+	.wrapper-connexion {
+		.btn-orange {
+			padding: 8px 15px;
+			font-size: 18px;
+			font-weight: 500;
+		}
+	}
+}

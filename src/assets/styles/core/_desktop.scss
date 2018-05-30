@@ -1,0 +1,24 @@
+.banner {
+	background-color: $yellow;
+	.wrapper-image {
+		width: 61.5%;
+		float: left;
+		.banner-image {
+			padding: 0;
+			img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+	.wrapper-subscription {
+		width: 38.5%;
+		float: right;
+		padding-right: 29px;
+		.subscription-block {
+			margin: 28px 0 27px;
+		}
+	}
+}

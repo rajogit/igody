@@ -1,0 +1,51 @@
+body {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.header {
+	padding-top: 30px;
+	margin-bottom: 20px;
+	border-bottom: 15px solid $orange;
+	transition: padding 0.3s ease;
+	
+	&.headroom--not-top {
+		padding-top: 10px;
+		transition: padding 0.3s ease;
+	}
+	.account-wrapper {
+		padding-top: 36px;
+		.btn-account {
+			padding: 7px 19px 7px 9px;
+		}
+		&.logged {
+			.btn-account {
+				padding: 7px 9px;
+			}
+		}
+	}
+	.logo-wrapper {
+		text-align: center;
+		a {
+			margin-bottom: 7px;
+			img {
+				max-width: 100%;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+		}
+		.header-baseline {
+			font-size: 14px;
+		}
+	}
+	&.header-other {
+		&.headroom--not-top {
+			padding-top: 0;
+			transition: none;
+		}
+		.account-wrapper {
+			padding: 0 9px;
+		}
+	}
+}

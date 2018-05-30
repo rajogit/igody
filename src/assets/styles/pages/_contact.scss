@@ -1,0 +1,51 @@
+body main.wrapper-contact {
+	aside.aside-contact {
+		padding: 34px;
+		@media screen and (min-width: 769px) {
+			padding-top: 164px;
+		}
+		.title {
+			font-size: 18px;
+			font-weight: 500;
+			margin-bottom: 7px;
+			i {
+				float: left;
+				margin-right: 10px;
+				&.icon-phone {
+					margin-top: 3px;
+				}
+				&.icon-map {
+					margin-top: 2px;
+				}
+			}
+		}
+		p {
+			font-weight: 500;
+			color: $orange;
+		}
+		hr {
+			margin-top: 13px;
+			margin-bottom: 13px;
+		}
+	}
+	article {
+		.content-form {
+			h1 {
+				margin-bottom: 6px;
+			}
+			.captcha-block {
+				p {
+					
+				}
+			}
+			.btn-orange {
+				padding: 10px 9px 10px 15px;
+				font-size: 18px;
+				font-weight: 500;
+				.icon-arrow-right {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

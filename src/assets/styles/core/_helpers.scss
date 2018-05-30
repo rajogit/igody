@@ -1,0 +1,430 @@
+.btn {
+  &.btn-circle {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+    line-height: 37px;
+    border-radius: 50%;
+    > .glyphicon {
+      vertical-align: middle;
+    }
+  }
+  &-orange {
+    @include button-variant(#222222, $yellow, transparent);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 4px 9px;
+    .icon-arrow-right {
+      margin-top: 3px;
+    }
+  }
+  &-white {
+    @include button-variant($orange, $white, transparent);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 4px 9px;
+    .icon-arrow-right-orange {
+      margin-left: 5px;
+    }
+    &:hover {
+      @include button-variant($white, $orange, transparent);
+      .icon-arrow-right-orange {
+        &:before {
+          @include sprite($arrow-right-white);
+        }
+      }
+    }
+  }
+  &-dark {
+    @include button-variant($white, $dark, transparent);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 9px 6px;
+    &:hover {
+      @include button-variant($white, $orange, transparent);
+    }
+  }
+  &-orange-bg {
+    @include button-variant($white, $orange, transparent);
+    font-weight: 500;
+    font-size: 15px;
+    padding: 8px 9px 6px;
+    &:hover {
+      @include button-variant($white, $dark, transparent);
+    }
+  }
+  &-grey {
+    @include button-variant($dark, #c6c6c6, transparent);
+    padding: 8px 9px 6px;
+    &:hover {
+      @include button-variant($orange, $white, transparent);
+    }
+  }
+}
+.mb40 {
+    margin-bottom: 20px;
+}
+.red-link {
+  color: $orange;
+  text-decoration: underline;
+  line-height: 120%;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 7px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  li {
+    list-style-type: none;
+  }
+}
+.col-first {
+  padding: 0;
+}
+.col-last {
+  padding: 0;
+}
+
+.no-pad-left {
+  @media screen and (min-width: 769px) {
+    padding-left: 0;
+  }
+}
+.no-pad-right {
+  @media screen and (min-width: 769px) {
+    padding-right: 0;
+  }
+}
+.marge-resp {
+  margin-top: 7px;
+  @media screen and (min-width: 769px) {
+    margin-top: 0;
+  }
+}
+.red-font {
+  color: $orange;
+}
+.form-horizontal .control-label {
+  text-align: left;
+}
+.modal {
+  // Generique
+  .modal-header {
+    border-bottom: 0 none;
+    .close {
+      font-size: 40px;
+      opacity: 1;
+      span {
+        line-height: 100%;
+      }
+    }
+    .modal-title {
+      margin-top: 20px;
+      color: $orange;
+      font-size: 14px;
+      font-weight: 500;
+      padding-right: 60px;
+      &:after {
+        content:"";
+        height: 1px;
+        width: 100%;
+        display: block;
+        margin-top: 4px;
+        background-color: $orange;
+      }
+      @media screen and (min-width: 768px) {
+        font-weight: 500;
+        font-size: 20px;
+      }
+    }
+  }
+  .modal-body {
+    font-weight: 500;
+    font-size: 16px;
+    h4 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+    @media screen and (min-width: 769px) {
+      padding: 0 45px 15px;
+    }
+  }
+  .btn {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    margin-top: 10px;
+    @media screen and (min-width: 769px) {
+      font-size: 18px;
+      padding: 8px 15px;
+    }
+    &-orange-bg {
+      font-size: 17px;
+      padding: 5px 12px;
+      .icon-arrow-right-white {
+        margin-left: 3px;
+      }
+      @media screen and (min-width: 769px) {
+        margin-right: 5px;
+        font-size: 18px;
+        padding: 8px 15px;
+      }
+      &:hover {
+        background-color: $dark;
+        .icon-arrow-right-white {
+          &:before {
+            @include sprite($arrow-right-orange)
+          }
+        }
+      }
+    }
+    &-grey {
+      color: $dark;
+      .icon-arrow-right {
+        margin-left: 3px;
+        &:before {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+      &:hover {
+        .icon-arrow-right {
+          &:before {
+            @include sprite($arrow-right-orange)
+          }
+        }
+      }
+    }
+  }
+  // Modal Ajout panier
+  &.modal-add-cart {
+    .close {
+      margin-right: 10px;
+      span {
+        color: $orange;
+      }
+    }
+    .modal-body {
+      text-align: left;
+    }
+  }
+  // Modal login
+  &.modal-login {
+    .close {
+      margin-right: 10px;
+      span {
+        color: $orange;
+      }
+    }
+    .modal-body {
+      text-align: left;
+      padding-bottom: 30px;
+      h4 {
+        margin-bottom: 15px;
+        font-size: 26px;
+      }
+      .col-sm-6 {
+        form {
+          border: 1px solid #e6e6e6;
+          padding: 20px 10px 0;
+          min-height: 294px;
+          margin-bottom: 20px;
+          @media screen and (min-width: 768px) {
+            padding: 20px;
+            margin-bottom: 0;
+          }
+          .login-title {
+            font-weight: 500;
+            font-size: 17px;
+            color: $dark;
+            @media screen and (min-width: 768px) {
+              font-size: 20px;
+            }
+          }
+          input.form-control {
+            border: 1px solid #e6e6e6;
+            padding: 0 12px;
+            height: 42px;
+            line-height: 42px;
+          }
+          .form-group {
+            margin-left: 0;
+            margin-right: 0;
+          }
+          .btn-orange {
+            font-weight: 500;
+            font-size: 14px;
+            padding: 8px 3px 8px 5px;
+            @media screen and (min-width: 768px) {
+              font-size: 15px;
+              margin-top: 0;  
+              padding: 8px 12px;
+            }
+          }
+        }
+      }
+      .form-note {
+        font-weight: 500;
+        font-size: 14px;
+        color: #5b5b5b;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.slick-dots {
+  bottom: -19px;
+  li {
+    width: 8px;
+    height: 8px;
+    button {
+      padding: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $dark;
+      &:before {
+        display: none;
+      }
+    }
+    &.slick-active, &:hover {
+      button {
+        background-color: $orange;
+      }
+    }
+  }
+}
+
+.drop-check {
+  margin-bottom: 9px;
+  .drop-label {
+    background-color: $white;
+    display: block;
+    height: 39px;
+    line-height: 39px;
+    padding: 0 42px 0 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0;
+    color: $dark;
+    position: relative;
+    &:before {
+      content:"";
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      right: 42px;
+      background-color: #e6e6e6;
+    }
+    &:after {
+      height: 100%;
+      width: 13px;
+      position: absolute;
+      background: transparent url(../images/arrow-down-black.png) no-repeat center center;
+      top: 0;
+      right: 15px;
+      bottom: 0;
+      border:0 none;
+      content: '';
+      display: block;
+      margin: auto 0;
+    }
+    &:hover {
+    }
+    &.on {
+      color: $orange;
+      &:after {
+        background: transparent url(../images/arrow-up-orange.png) no-repeat center center;
+      }
+    }
+  }
+  .drop-content {
+    display: none;
+    padding: 0;
+    margin: 0;
+    li {
+      &:last-child {
+        border-bottom: 0 none;
+      }
+      &.has-drop {
+        border-bottom: 0 none;
+        .drop-label {
+          background-color: transparent;
+          border-bottom: 1px solid $white;
+          padding-left: 0;
+          &.on {
+            color: $dark;
+          }
+        }
+      }
+    }
+  }
+}
+.article-sidebar {
+  .checkbox {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    display: block;
+    &.choice-urgent {
+      background-color: #bbb;
+      margin-bottom: 17px;
+      margin-top: 19px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      .the-rad {
+        float: left;
+        margin-right: 7px;
+        margin-top: 3px;
+      }
+    }
+    .the-rad {
+      background-color: $white;
+    }
+    .drop-content {
+      .checkbox {
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+    }
+    input[type="checkbox"]:checked + .the-rad {
+      background-color: $orange;
+      border-color: $orange;
+      &:before {
+        display: none;
+      }
+    }
+    input[type="checkbox"]:checked + .the-rad + .radio-label {
+      color: $orange;
+    }
+  }
+  .wrapper-search-input {
+    position: relative;
+    margin-bottom: 28px;
+    &:before {
+      content:'';
+      @include sprite($loupe-noir);
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -9px;
+      left: 15px;
+    }
+    .input-search {
+      height: 65px;
+      line-height: 65px;
+      border: 1px solid #969696;
+      padding-left: 50px;
+      @include placeholder-medium-italic(#686666);
+    }
+  }
+}

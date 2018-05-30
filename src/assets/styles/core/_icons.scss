@@ -1,0 +1,657 @@
+.icon-user {
+	float: left;
+	&:before {
+		content: "";
+		display: inline-block;
+		@include sprite($user-mob);
+		@media screen and (min-width: 769px) {
+			margin-top: 2px;
+			margin-right: 10px;
+			@include sprite($user);
+		}
+	}
+}
+.icon-user-orange {
+	float: left;
+	&:before {
+		content: "";
+		display: inline-block;
+		@include sprite($user-orange-mob);
+		@media screen and (min-width: 769px) {
+			margin-top: 2px;
+			@include sprite($user-orange);
+		}
+	}
+}
+.icon-arrow-right {
+	&:before {
+		content: "";
+		display: inline-block;
+		margin-top: 2px;
+		margin-right: 10px;
+		margin-left: 10px;
+		@include sprite($arrow-right);
+	}
+}
+.icon-arrow-left {
+	&:before {
+		content: "";
+		display: inline-block;
+		margin-top: 2px;
+		margin-right: 10px;
+		@include sprite($arrow-left);
+	}
+}
+.link-arrow:hover {
+	.icon-arrow-right {
+		&:before {
+			@include sprite($arrow-right-orange);
+		}
+	}
+	.icon-arrow-left {
+		&:before {
+			@include sprite($arrow-left-orange);
+		}
+	}
+}
+.icon-plus {
+	&:before {
+		content: "";
+		display: inline-block;
+		margin-top: 2px;
+		margin-right: 10px;
+		@include sprite($plus);
+	}
+}
+.icon-help {
+	position: relative;
+	cursor: pointer;
+	@include sprite-width($help);
+	@include sprite-height($help);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 3px;
+		margin-left: 5px;
+		@include sprite($help);
+	}
+}
+.icon-print {
+	position: relative;
+	cursor: pointer;
+	@include sprite-width($print);
+	@include sprite-height($print);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		@include sprite($print);
+	}
+}
+.icon-big-help {
+	position: relative;
+	cursor: pointer;
+	@include sprite-width($big-help);
+	@include sprite-height($big-help);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 3px;
+		margin-left: 5px;
+		@include sprite($big-help);
+	}
+}
+.icon-shield {
+	position: relative;
+	@include sprite-width($shield);
+	@include sprite-height($shield);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		@include sprite($shield);
+	}
+}
+
+.icon-phone {
+	position: relative;
+	@include sprite-width($phone);
+	@include sprite-height($phone);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		@include sprite($phone);
+	}
+}
+
+.icon-map {
+	position: relative;
+	@include sprite-width($map);
+	@include sprite-height($map);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		@include sprite($map);
+	}
+}
+
+.icon-fax {
+	position: relative;
+	@include sprite-width($fax);
+	@include sprite-height($fax);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		@include sprite($fax);
+	}
+}
+
+.icon-upload-orange {
+	position: relative;
+	@include sprite-width($upload-orange);
+	@include sprite-height($upload-orange);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		@include sprite($upload-orange);
+	}
+}
+
+.icon-loupe {
+	position: relative;
+	@include sprite-width($loupe);
+	@include sprite-height($loupe);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($loupe);
+	}
+}
+
+.icon-delete {
+	position: relative;
+	@include sprite-width($delete);
+	@include sprite-height($delete);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($delete);
+	}
+}
+
+.icon-arrow-right-white {
+	position: relative;
+	@include sprite-width($arrow-right-white);
+	@include sprite-height($arrow-right-white);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($arrow-right-white);
+	}
+}
+
+.icon-arrow-right-orange {
+	position: relative;
+	@include sprite-width($arrow-right-orange);
+	@include sprite-height($arrow-right-orange);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($arrow-right-orange);
+	}
+}
+
+.icon-arrow-down-white {
+	position: relative;
+	@include sprite-width($arrow-down-white);
+	@include sprite-height($arrow-down-white);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($arrow-down-white);
+	}
+}
+
+.icon-check-orange {
+	position: relative;
+	@include sprite-width($check-orange);
+	@include sprite-height($check-orange);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($check-orange);
+	}
+}
+
+.icon-share {
+	position: relative;
+	@include sprite-width($share);
+	@include sprite-height($share);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($share);
+	}
+}
+
+.icon-fb-share {
+	position: relative;
+	@include sprite-width($fb-share);
+	@include sprite-height($fb-share);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($fb-share);
+	}
+}
+
+.icon-twitter {
+	position: relative;
+	@include sprite-width($twitter);
+	@include sprite-height($twitter);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($twitter);
+	}
+}
+
+.icon-rss {
+	position: relative;
+	@include sprite-width($rss);
+	@include sprite-height($rss);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($rss);
+	}
+}
+
+.icon-rss-orange {
+	position: relative;
+	@include sprite-width($rss-orange);
+	@include sprite-height($rss-orange);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($rss-orange);
+	}
+}
+
+.icon-edit-comment {
+	position: relative;
+	@include sprite-width($edit-comment);
+	@include sprite-height($edit-comment);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($edit-comment);
+	}
+}
+.icon-edit-comment-noir {
+	position: relative;
+	@include sprite-width($edit-comment-noir);
+	@include sprite-height($edit-comment-noir);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($edit-comment-noir);
+	}
+}
+.icon-danger {
+	position: relative;
+	@include sprite-width($danger);
+	@include sprite-height($danger);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($danger);
+	}
+}
+
+.icon-comment {
+	position: relative;
+	@include sprite-width($comment);
+	@include sprite-height($comment);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($comment);
+	}
+}
+
+.icon-envelope {
+	position: relative;
+	@include sprite-width($envelope);
+	@include sprite-height($envelope);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($envelope);
+	}
+}
+
+.icon-star {
+	position: relative;
+	@include sprite-width($star);
+	@include sprite-height($star);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($star);
+	}
+}
+
+.icon-star-orange {
+	position: relative;
+	@include sprite-width($star-orange);
+	@include sprite-height($star-orange);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($star-orange);
+	}
+}
+
+.icon-add-advert {
+	position: relative;
+	@include sprite-height($add-advert);
+	@include sprite-width($add-advert);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($add-advert);
+		width: 70px;
+	}
+}
+
+.icon-circle-plus {
+	position: relative;
+	@include sprite-height($circle-plus);
+	@include sprite-width($circle-plus);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($circle-plus);
+	}
+}
+
+.icon-envelope-o {
+	position: relative;
+	@include sprite-height($envelope-o);
+	@include sprite-width($envelope-o);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($envelope-o);
+		width: 19px;
+	}
+}
+
+.icon-phone-o {
+	position: relative;
+	@include sprite-height($phone-o);
+	@include sprite-width($phone-o);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($phone-o);
+	}
+}
+
+.icon-contact {
+	position: relative;
+	@include sprite-height($contact);
+	@include sprite-width($contact);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($contact);
+	}
+}
+.icon-list {
+	position: relative;
+	@include sprite-height($list);
+	@include sprite-width($list);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($list);
+	}
+}
+.icon-rss-sidebar {
+	position: relative;
+	width: 19px;
+	height: 17px;
+	margin-right: 5px;
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($rss-sidebar);
+		width: 19px;
+		height: 17px;
+	}
+}
+.icon-arrow-down-black {
+	position: relative;
+	@include sprite-height($arrow-down-black);
+	@include sprite-width($arrow-down-black);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($arrow-down-black);
+	}
+}
+.icon-delete-o {
+	position: relative;
+	@include sprite-height($delete-o);
+	@include sprite-width($delete-o);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($delete-o);
+	}
+}
+.icon-calendar {
+	position: relative;
+	@include sprite-height($calendar);
+	@include sprite-width($calendar);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($calendar);
+	}
+}
+
+.icon-hamburger {
+	position: relative;
+	@include sprite-width($hamburger-mob);
+	@include sprite-height($hamburger-mob);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($hamburger-mob);
+	}
+	@media screen and (min-width: 769px) {
+		@include sprite-width($hamburger);
+		@include sprite-height($hamburger);
+		&:before {
+			@include sprite($hamburger);
+		}
+	}
+	
+}
+
+.icon-loupe-noir-lg {
+	position: relative;
+	@include sprite-width($loupe-mob);
+	@include sprite-height($loupe-mob);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($loupe-mob);
+	}
+	@media screen and (min-width: 769px) {
+		@include sprite-width($loupe-noir-lg);
+		@include sprite-height($loupe-noir-lg);
+		&:before {
+			@include sprite($loupe-noir-lg);
+		}
+	}
+}
+
+.icon-arrow-down-orange {
+	position: relative;
+	@include sprite-width($arrow-down-orange);
+	@include sprite-height($arrow-down-orange);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($arrow-down-orange);
+	}
+}
+.icon-loupe-orange {
+	position: relative;
+	@include sprite-width($loupe-orange);
+	@include sprite-height($loupe-orange);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($loupe-orange);
+	}
+}
+.icon-arrow-down-circle {
+	position: relative;
+	@include sprite-width($arrow-down-circle);
+	@include sprite-height($arrow-down-circle);
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include sprite($arrow-down-circle);
+	}
+}
+.icon-arrow-down-circle-white {
+	position: relative;
+	@include sprite-width($arrow-down-circle-white);
+	@include sprite-height($arrow-down-circle-white);
+	margin-right: 5px;
+	&:before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		top: 2px;
+		left: 0;
+		@include sprite($arrow-down-circle-white);
+	}
+}

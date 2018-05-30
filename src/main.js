@@ -12,7 +12,11 @@ import AnimatedVue from 'animated-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'vuetify/dist/vuetify.min.css'
 import 'animate.css/animate.css'
+
+import './assets/scritps/main'
+import './assets/styles/main.scss'
 
 Vue.use(Vuetify)
 Vue.use(VueFrom)
